@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    Add an ordered list with roman numerals
+   <!--Add an ordered list with roman numerals  --> Add an ordered list with roman numerals
     <li>
         <ol type="I">
             <li>Kenya</li>
@@ -14,7 +14,7 @@
             <li>Uganda</li>
         </ol>
     </li>
-
+<!--image  -->
     <img src="https://images.pexels.com/photos/31078829/pexels-photo-31078829/free-photo-of-cozy-flat-lay-sweater-headphones-and-bag.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" 
     alt="image from pexels">
 
@@ -60,6 +60,95 @@
           </tr>
         </tbody>
       </table>
+
+      <form action="/submit" method="POST">
+        <!-- Registration Form -->
+        <fieldset>
+          <legend>Registration Form</legend>
+      
+          <!-- Name Field -->
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+      
+          <!-- Email Field -->
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+      
+          <!-- Password Field -->
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6">
+          </div>
+            <!-- Date Field -->
+    <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </div>
+  
+      <!-- Dropdown Field with African Countries -->
+      <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">Select your country</option>
+          <option value="nigeria">Nigeria</option>
+          <option value="south_africa">South Africa</option>
+          <option value="kenya">Kenya</option>
+          <option value="egypt">Egypt</option>
+          <option value="ghana">Ghana</option>
+          <option value="ethiopia">Ethiopia</option>
+          <option value="tanzania">Tanzania</option>
+          <option value="uganda">Uganda</option>
+          <option value="rwanda">Rwanda</option>
+          <option value="zambia">Zambia</option>
+          <option value="morocco">Morocco</option>
+          <option value="algeria">Algeria</option>
+          <option value="senegal">Senegal</option>
+          <option value="angola">Angola</option>
+          <option value="sudan">Sudan</option>
+          <option value="mozambique">Mozambique</option>
+        </select>
+      </div>
+  
+      <!-- Radio Buttons -->
+      <div>
+        <label>Gender:</label>
+        <div>
+          <input type="radio" id="male" name="gender" value="male" required>
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female" required>
+          <label for="female">Female</label>
+        </div>
+      </div>
+  
+      <!-- Checkboxes -->
+      <div>
+        <label>Interests:</label>
+        <div>
+          <input type="checkbox" id="sports" name="interests" value="sports">
+          <label for="sports">Sports</label>
+        </div>
+        <div>
+          <input type="checkbox" id="music" name="interests" value="music">
+          <label for="music">Music</label>
+        </div>
+        <div>
+          <input type="checkbox" id="travel" name="interests" value="travel">
+          <label for="travel">Travel</label>
+        </div>
+      </div>
+  
+      <!-- Submit Button -->
+      <div>
+        <button type="submit">Register</button>
+      </div>
+    </fieldset>
+  </form>
       
 </body>
 </html>
